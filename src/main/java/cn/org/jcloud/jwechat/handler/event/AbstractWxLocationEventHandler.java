@@ -1,9 +1,9 @@
 package cn.org.jcloud.jwechat.handler.event;
 
 import cn.org.jcloud.jwechat.annotation.WxHandler;
-import cn.org.jcloud.jwechat.bean.message.event.InBaseEvent;
-import cn.org.jcloud.jwechat.bean.message.event.InLocationEvent;
-import cn.org.jcloud.jwechat.bean.message.send.OutBaseMessage;
+import cn.org.jcloud.jwechat.bean.event.InBaseEvent;
+import cn.org.jcloud.jwechat.bean.event.InLocationEvent;
+import cn.org.jcloud.jwechat.bean.send.OutBaseMessage;
 import cn.org.jcloud.jwechat.config.WxConfig;
 import cn.org.jcloud.jwechat.enums.EventTypeEnum;
 import cn.org.jcloud.jwechat.enums.MsgTypeEnum;
@@ -22,8 +22,9 @@ public abstract class AbstractWxLocationEventHandler extends AbstractWxEventHand
 
     @Override
     public OutBaseMessage handle(InBaseEvent baseEvent, String openId, OutMessageHelper outMessageHelper, WxConfig config) {
-        return handleDetail((InLocationEvent) baseEvent, openId,outMessageHelper,config);
+        handleDetail((InLocationEvent) baseEvent, openId,outMessageHelper,config);
+        return outMessageHelper.replyNullMessage();
     }
 
-    protected abstract OutBaseMessage handleDetail(InLocationEvent inLocationEvent, String openId, OutMessageHelper outMessageHelper, WxConfig config);
+    protected abstract void handleDetail(InLocationEvent inLocationEvent, String openId, OutMessageHelper outMessageHelper, WxConfig config);
 }

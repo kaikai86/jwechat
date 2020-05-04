@@ -1,9 +1,9 @@
 package cn.org.jcloud.jwechat.handler.event;
 
 import cn.org.jcloud.jwechat.annotation.WxHandler;
-import cn.org.jcloud.jwechat.bean.message.event.InBaseEvent;
-import cn.org.jcloud.jwechat.bean.message.event.InUnsubscribeEvent;
-import cn.org.jcloud.jwechat.bean.message.send.OutBaseMessage;
+import cn.org.jcloud.jwechat.bean.event.InBaseEvent;
+import cn.org.jcloud.jwechat.bean.event.InUnsubscribeEvent;
+import cn.org.jcloud.jwechat.bean.send.OutBaseMessage;
 import cn.org.jcloud.jwechat.config.WxConfig;
 import cn.org.jcloud.jwechat.enums.EventTypeEnum;
 import cn.org.jcloud.jwechat.enums.MsgTypeEnum;

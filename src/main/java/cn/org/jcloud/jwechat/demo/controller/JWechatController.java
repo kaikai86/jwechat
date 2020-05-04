@@ -1,7 +1,7 @@
 package cn.org.jcloud.jwechat.demo.controller;
 
 import cn.hutool.core.util.StrUtil;
-import cn.org.jcloud.jwechat.api.message.WxMainService;
+import cn.org.jcloud.jwechat.WxMainService;
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

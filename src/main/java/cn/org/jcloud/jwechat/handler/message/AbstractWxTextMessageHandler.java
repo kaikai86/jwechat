@@ -2,9 +2,9 @@ package cn.org.jcloud.jwechat.handler.message;
 
 import cn.org.jcloud.jwechat.annotation.WxHandler;
 import cn.org.jcloud.jwechat.util.OutMessageHelper;
-import cn.org.jcloud.jwechat.bean.message.receive.InBaseMessage;
-import cn.org.jcloud.jwechat.bean.message.receive.InTextMessage;
-import cn.org.jcloud.jwechat.bean.message.send.OutBaseMessage;
+import cn.org.jcloud.jwechat.bean.receive.InBaseMessage;
+import cn.org.jcloud.jwechat.bean.receive.InTextMessage;
+import cn.org.jcloud.jwechat.bean.send.OutBaseMessage;
 import cn.org.jcloud.jwechat.config.WxConfig;
 import cn.org.jcloud.jwechat.enums.MsgTypeEnum;
 

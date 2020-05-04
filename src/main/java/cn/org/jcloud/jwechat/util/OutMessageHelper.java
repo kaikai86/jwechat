@@ -1,8 +1,8 @@
 package cn.org.jcloud.jwechat.util;
 
 import cn.hutool.core.bean.BeanUtil;
-import cn.org.jcloud.jwechat.bean.message.dto.*;
-import cn.org.jcloud.jwechat.bean.message.send.*;
+import cn.org.jcloud.jwechat.bean.dto.*;
+import cn.org.jcloud.jwechat.bean.send.*;
 import cn.org.jcloud.jwechat.enums.MsgTypeEnum;
 import lombok.Getter;
 import lombok.Setter;
